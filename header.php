@@ -9,13 +9,17 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div id="page-loader">
+        <span class="loading loading-ring loading-xl text-primary"></span>
+    </div>
+
     <header class="py-3 border-b-2 border-gray-100">
-        <div class="bg-fuchsia-200">
+        <div class="container max-w-7xl mx-auto">
             <div class="flex items-center justify-between">
                 <div class="_logo">
                     <a href="/" class="flex items-center gap-3">
                         <img class="w-10" src="<?php echo get_template_directory_uri(); ?>/assets/images/befroosh-logo.svg" alt="Logo">
-                        <h1 class="text-[#2563eb] text-xl font-black"><?php bloginfo('name'); ?></h1>
+                        <h1 class="text-[#2563eb] text-[22px] font-black"><?php bloginfo('name'); ?></h1>
                     </a>
                 </div>
                 <nav>

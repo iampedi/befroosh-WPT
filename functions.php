@@ -56,11 +56,11 @@ add_filter('nav_menu_css_class', function ($classes, $item, $args, $depth) {
     return $classes;
 }, 10, 4);
 
-// افزودن کلاس دلخواه به <a> لینک‌های منو
+// Main Menu Links Classes
 add_filter('nav_menu_link_attributes', function ($atts, $item, $args, $depth) {
     if ($args->theme_location === 'primary') {
         $atts['class'] = $depth === 0
-            ? 'flex items-center h-12 px-4 font-semibold hover:bg-gray-100 rounded-lg duration-300 hover:text-primary aria-[current=page]:bg-gray-50 aria-[current=page]:text-primary aria-[current=page]:cursor-default'
+            ? 'flex items-center h-12 px-4 font-semibold hover:bg-gray-100 rounded-lg duration-300 hover:text-primary aria-[current=page]:bg-violet-100 aria-[current=page]:text-primary aria-[current=page]:cursor-default'
             : '';
     }
     return $atts;

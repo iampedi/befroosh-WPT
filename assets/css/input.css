@@ -1,14 +1,54 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
 @font-face {
-  font-family: "AnjomanMaxVF";
-  src: url("../fonts/AnjomanMaxVF.woff2") format("woff2");
-  font-display: swap;
+  font-family: 'AnjomanMaxVF';
+  src: url('../fonts/AnjomanMaxVF.woff') format('woff-variations'),
+    url('../fonts/AnjomanMaxVF.woff') format('woff');
+  font-weight: 100 1000;
+  font-display: fallback;
 }
 
-@layer utilities {
+@font-face {
+  font-family: 'AnjomanMax';
+  src: url('../fonts/AnjomanMax-regular.woff') format('woff');
+}
+
+body {
+  font-family: 'AnjomanMax', tahoma;
+}
+
+@supports (font-variation-settings: normal) {
   body {
-    font-family: "AnjomanMaxVF", sans-serif;
+    font-family: "AnjomanMaxVF", tahoma;
+    font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -moz-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -ms-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -o-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    font-variation-settings: "DOTS" 3;
   }
+}
+
+
+
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  /* یا رنگ دلخواه */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+body.loaded #page-loader {
+  opacity: 0;
+  pointer-events: none;
 }
