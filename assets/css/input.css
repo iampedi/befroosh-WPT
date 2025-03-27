@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: "AnjomanMaxVF";
+  src: url("../fonts/AnjomanMaxVF.woff2") format("woff2");
+  font-display: swap;
+}
+
+@layer utilities {
+  body {
+    font-family: "AnjomanMaxVF", sans-serif;
+  }
+}

@@ -1,0 +1,13 @@
+/*
+Theme Name: Befroosh
+Theme URI: https://befroosh.app/
+Author: Pedram Ghane
+Author URI: http://pediland.com/
+Description: This is a custom theme for Befroosh project.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
