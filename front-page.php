@@ -5,7 +5,7 @@
     <div class="container max-w-7xl mx-auto px-3 md:px-0">
         <div class="_page-wrapper py-6 md:py-8">
             <div class="_page-header">
-                <h1 class="text-3xl font-bold mb-4 text-fuchsia-500"><?php the_title(); ?></h1>
+                <!-- <h1><?php the_title(); ?></h1> -->
 
                 <?php if (function_exists('get_field')): ?>
                     <?php if ($page_description = get_field('page_description')): ?>

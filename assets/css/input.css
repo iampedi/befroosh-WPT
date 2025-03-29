@@ -61,3 +61,8 @@ body.loaded #page-loader {
   opacity: 0;
   pointer-events: none;
 }
+
+.collapse-title::after {
+  font-size: 1.25rem;
+  height: fit-content;
+}
