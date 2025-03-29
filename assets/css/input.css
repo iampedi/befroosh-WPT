@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+:root {
+  --color-primary: oklch(0.623 0.214 259.815);
+  --color-secondary: oklch(0.627 0.265 303.9);
+}
 
 @font-face {
   font-family: 'AnjomanMaxVF';
@@ -13,6 +17,10 @@
 @font-face {
   font-family: 'AnjomanMax';
   src: url('../fonts/AnjomanMax-regular.woff') format('woff');
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,7 +39,9 @@ body {
   }
 }
 
-
+.btn {
+  @apply rounded-lg border-0 shadow-none;
+}
 
 #page-loader {
   position: fixed;
@@ -40,7 +50,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: white;
-  /* یا رنگ دلخواه */
   display: flex;
   align-items: center;
   justify-content: center;

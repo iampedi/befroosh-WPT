@@ -1,5 +1,5 @@
-<footer class="bg-gray-100 py-6">
-    <div class="container max-w-7xl mx-auto">
+<footer class="bg-gray-100 py-3 md:py-6">
+    <div class="container max-w-7xl mx-auto px-3 md:px-0">
         <div class="_copy-right text-center">
             <p class="text-gray-500 textarea-md">تمامی حقوق ناشی از این وب سایت برای <?php bloginfo('name'); ?> محفوظ است. <?php echo date('Y'); ?>&copy;</p>
         </div>

@@ -1,32 +1,27 @@
-<?php
-/* Template Name: Blog */
-get_header();
-?>
+<?php get_template_part('parts/header'); ?>
 
-<main class="page-blog py-8">
-    <div class="container max-w-7xl mx-auto">
+<main class="_page-blog-list py-6 md:py-8">
+    <div class="container max-w-7xl mx-auto px-3 md:px-0">
         <div class="_page-header text-center py-4 mb-8">
             <h1 class="text-3xl font-bold mb-6 text-center text-primary">
                 <?php echo get_the_title(get_queried_object_id()); ?>
             </h1>
-
             <?php
             $page_for_posts = get_option('page_for_posts');
             if ($page_for_posts) {
                 $post = get_post($page_for_posts);
                 setup_postdata($post);
             ?>
-                <div class="description text-lg font-medium text-gray-500">
+                <div class="_description text-lg font-medium text-gray-500">
                     <?php the_content(); ?>
                 </div>
             <?php
                 wp_reset_postdata();
             }
             ?>
-
         </div>
 
-        <div class="_blog-wrapper grid grid-cols-3 gap-8">
+        <div class="_blog-wrapper grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <?php
             $paged = get_query_var('paged') ?: 1;
             $args = [
@@ -76,4 +71,4 @@ get_header();
     </div>
 </main>
 
-<?php get_footer(); ?>
+<?php get_template_part('parts/footer'); ?>
