@@ -77,3 +77,20 @@ body.loaded #page-loader {
     height: fit-content;
   }
 }
+
+/* Simple Page Template CSS  */
+._page-content h2 {
+  @apply text-xl font-bold mt-8 md:mt-10 mb-2 text-blue-900;
+}
+
+._page-content p {
+  @apply mb-3 leading-relaxed;
+}
+
+._page-content ul {
+  @apply list-disc px-6 md:px-8 mb-6;
+}
+
+._page-content ul li {
+  @apply mb-2;
+}

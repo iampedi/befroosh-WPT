@@ -1,3 +1,7 @@
+<?php
+get_template_part('parts/bottom_icons');
+?>
+
 <footer>
     <div class="_footer pb-8 md:pb-18 pt-20 md:pt-28 bg-gradient-to-t from-gray-200 to-white">
         <div class="container max-w-7xl mx-auto px-6 md:px-0">
@@ -36,7 +40,7 @@
                             <ul class="text-[15px] leading-7 text-gray-500 [&>li>a]:hover:text-blue-900 duration-300">
                                 <li><a href="/blog">بلاگ بفروش</a></li>
                                 <li><a href="/faq">سوالات متداول</a></li>
-                                <li><a href="/pricvacy">حریم خصوصی کاربران</a></li>
+                                <li><a href="/privacy">حریم خصوصی</a></li>
                                 <li><a href="/terms">قوانین و مقررات</a></li>
                             </ul>
                         </div>

@@ -25,9 +25,10 @@
                 ?>
             </div>
 
-            <div class="_page-content">
+            <div class="_page-content <?php if (is_page(['privacy', 'terms'])) echo ' max-w-4xl mx-auto px-1 md:px-0'; ?>">
                 <?php the_content(); ?>
             </div>
+
         </div>
     </div>
 </main>
