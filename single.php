@@ -28,20 +28,18 @@
                         </div>
                         <div class="_left-section">
                             <div class="socials flex items-center gap-2 md:gap-1.5">
-                                <div class="bg-gray-200 flex items-center justify-center rounded-full p-2 text-xl hover:bg-blue-500 hover:text-white duration-300">
-                                    <i class="ph ph-telegram-logo"></i>
-                                </div>
-                                <div class="bg-gray-200 flex items-center justify-center rounded-full p-2 text-xl hover:bg-green-500 hover:text-white duration-300">
-                                    <i class="ph ph-whatsapp-logo"></i>
-                                </div>
-                                <div class="bg-gray-200 flex items-center justify-center rounded-full p-2 text-xl hover:bg-fuchsia-700 hover:text-white duration-300">
-                                    <i class="ph ph-instagram-logo"></i>
-                                </div>
-                                <div class="bg-gray-200 flex items-center justify-center rounded-full p-2 text-xl hover:bg-gray-900 hover:text-white duration-300">
-                                    <i class="ph ph-x-logo"></i>
-                                </div>
-                                <div class="bg-gray-200 flex items-center justify-center rounded-full gap-1 p-2 hover:bg-primary hover:text-white duration-300">
-                                    <i class="ph ph-link-simple"></i><span class="text-xs pl-1">لینک مطلب</span>
+                                <div class="flex items-center gap-2 py-4">
+                                    <div class="_copy-link bg-gray-200 flex items-center justify-center rounded-full gap-1 p-2 hover:bg-primary hover:text-white duration-300 cursor-pointer"
+                                        onclick="copyLinkAndShowToast()">
+                                        <i class="ph ph-link-simple"></i>
+                                        <span class="text-xs pl-1">کپی لینک مطلب</span>
+                                    </div>
+                                    <div id="copy-toast" class="toast toast-start hidden">
+                                        <div role="alert" class="alert alert-success alert-soft">
+                                            <span>لینک این مطلب کپی شد!</span>
+                                        </div>
+                                    </div>
+                                    <div id="post-link" data-link="<?php echo esc_url(get_permalink()); ?>" hidden></div>
                                 </div>
                             </div>
                         </div>
@@ -59,5 +57,47 @@
                 </div>
     </div>
 </main>
+
+<script>
+    function copyLinkAndShowToast() {
+        const link = "<?php echo get_permalink(); ?>";
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            // روش مدرن
+            navigator.clipboard.writeText(link).then(() => {
+                showToast();
+            }).catch((err) => {
+                console.error('کپی لینک با خطا مواجه شد:', err);
+                alert('متاسفانه کپی لینک توسط مرورگر شما پشتیبانی نمی‌شود.');
+            });
+        } else {
+            // روش قدیمی
+            const textarea = document.createElement('textarea');
+            textarea.value = link;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast();
+            } catch (err) {
+                console.error('کپی لینک با خطا مواجه شد:', err);
+                alert('متاسفانه کپی لینک توسط مرورگر شما پشتیبانی نمی‌شود.');
+            }
+            document.body.removeChild(textarea);
+        }
+    }
+
+    function showToast() {
+        const toast = document.getElementById('copy-toast');
+        toast.classList.remove('hidden');
+
+        // بعد از 2 ثانیه، Toast را مخفی کن
+        setTimeout(() => {
+            toast.classList.add('hidden');
+        }, 2000);
+    }
+</script>
+
+
 
 <?php get_template_part('parts/footer'); ?>

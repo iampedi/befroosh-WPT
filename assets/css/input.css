@@ -27,20 +27,9 @@ body {
   font-family: 'AnjomanMax', tahoma;
 }
 
-@supports (font-variation-settings: normal) {
-  body {
-    font-family: "AnjomanMaxVF", tahoma;
-    font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
-    -moz-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
-    -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
-    -ms-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
-    -o-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
-    font-variation-settings: "DOTS" 3;
-  }
-}
-
-.btn {
-  @apply rounded-lg border-0 shadow-none;
+body.loaded #page-loader {
+  opacity: 0;
+  pointer-events: none;
 }
 
 #page-loader {
@@ -57,12 +46,34 @@ body {
   transition: opacity 0.3s ease;
 }
 
-body.loaded #page-loader {
-  opacity: 0;
-  pointer-events: none;
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "AnjomanMaxVF", tahoma;
+    font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -moz-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -ms-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    -o-font-feature-settings: "kern" on, "liga" on, "calt" on, "salt" on;
+    font-variation-settings: "DOTS" 3;
+  }
 }
 
-.collapse-title::after {
-  font-size: 1.25rem;
-  height: fit-content;
+/* Daisy Overrides */
+@layer components {
+  .btn {
+    @apply !rounded-lg !border-0 !shadow-none;
+  }
+
+  .alert {
+    @apply !rounded-xl;
+  }
+
+  .alert.alert-soft {
+    @apply !text-green-600;
+  }
+
+  .collapse-title::after {
+    font-size: 1.25rem;
+    height: fit-content;
+  }
 }
