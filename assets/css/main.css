@@ -1938,6 +1938,9 @@
     color: var(--color-success-content);
     --alert-color: var(--color-success);
   }
+  .border-blue-50 {
+    border-color: var(--color-blue-50);
+  }
   .border-blue-100 {
     border-color: var(--color-blue-100);
   }
@@ -1958,6 +1961,12 @@
   }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
+  }
+  .bg-blue-50\/40 {
+    background-color: color-mix(in oklab, var(--color-blue-50) 40%, transparent);
+  }
+  .bg-blue-50\/50 {
+    background-color: color-mix(in oklab, var(--color-blue-50) 50%, transparent);
   }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
@@ -2490,6 +2499,11 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
+  .md\:py-0 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
   .md\:py-2 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 2);
@@ -2528,6 +2542,16 @@
   .md\:pb-20 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:pb-24 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:pb-28 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 28);
     }
   }
   .\[\&\>li\>a\]\:hover\:text-blue-900 {

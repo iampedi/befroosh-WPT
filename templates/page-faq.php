@@ -4,7 +4,7 @@ Template Name: FAQ Page
 */
 get_template_part('parts/header'); ?>
 
-<main class="_page-faq-list pt-6 pb-14 md:pt-8 md:pb-20">
+<main class="_page-faq-list pt-6 pb-14 md:pt-8 md:pb-28">
   <div class="container max-w-7xl mx-auto px-3 md:px-0">
     <div class="_page-wrapper">
       <div class="_page-header flex flex-col items-center gap-3 md:gap-4 py-6 md:py-8 mb-6 md:mb-8">
