@@ -1,8 +1,8 @@
 <?php get_template_part('parts/header'); ?>
 
 <!-- Home Page Default Template -->
-<main class="_page">
-    <div class="container max-w-7xl mx-auto px-3 md:px-0">
+<main class="_page main-padding">
+    <div class="container max-w-7xl mx-auto px-4 md:px-0">
         <div class="_page-wrapper py-6 md:py-8">
             <div class="_page-header">
                 <!-- <h1><?php the_title(); ?></h1> -->

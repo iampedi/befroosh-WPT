@@ -18,7 +18,7 @@
     </div>
 
     <header class="py-3 border-b-2 border-gray-100">
-        <div class="container max-w-7xl mx-auto px-3 md:px-0">
+        <div class="container max-w-7xl mx-auto px-4 md:px-0">
             <div class="flex items-center justify-between">
                 <div class="_logo">
                     <a href="/" class="flex items-center gap-3">

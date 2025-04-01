@@ -60,6 +60,26 @@ body.loaded #page-loader {
 
 /* Daisy Overrides */
 @layer components {
+  .main-padding {
+    @apply pt-6 pb-14 md:pt-8 md:pb-28;
+  }
+
+  ._contact-details ._item {
+    @apply flex items-center gap-2 flex-1/4 flex-grow-0;
+  }
+
+  ._contact-details ._item a {
+    @apply flex items-center gap-4 w-full p-4 font-black text-gray-400 hover:text-blue-900 bg-gray-50/50 hover:bg-blue-50 border-[3px] border-gray-100 hover:border-blue-200 rounded-xl duration-300;
+  }
+
+  ._contact-details ._item a i {
+    @apply text-4xl text-gray-400 group-hover:text-blue-900 rounded-full p-3 duration-300 bg-gray-100 group-hover:bg-blue-100;
+  }
+
+  ._contact-details ._item a ._title {
+    @apply text-xl;
+  }
+
   .btn {
     @apply !rounded-lg !border-0 !shadow-none;
   }

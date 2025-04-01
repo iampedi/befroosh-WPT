@@ -59,7 +59,7 @@ get_template_part('parts/bottom_icons');
         </div>
     </div>
     <div class="_copy-right bg-gray-200 py-4 md:py-6">
-        <div class="container max-w-7xl mx-auto px-3 md:px-0">
+        <div class="container max-w-7xl mx-auto px-4 md:px-0">
             <div class="_wrapper">
                 <p class="text-gray-400 text-sm text-center">© تمامی حقوق ناشی از این وب سایت برای <span class="text-gray-600"><?php bloginfo('name'); ?></span> محفوظ است.</p>
             </div>

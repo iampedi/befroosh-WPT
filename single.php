@@ -1,7 +1,7 @@
 <?php get_template_part('parts/header') ?>
 
-<main class="_page-blog-post py-6 md:py-8">
-    <div class="container max-w-4xl mx-auto px-3 md:px-0">
+<main class="_page-blog-post main-padding">
+    <div class="container max-w-4xl mx-auto px-4 md:px-0">
         <?php if (have_posts()) :
             while (have_posts()) : the_post(); ?>
                 <div class="_post-header flex flex-col gap-3 md:gap-6 mb-6">
