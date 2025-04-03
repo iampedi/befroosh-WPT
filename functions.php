@@ -66,3 +66,19 @@ function convert_numbers_to_persian($string)
     $persian = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
     return str_replace($english, $persian, $string);
 }
+
+
+// Add JS Files
+function theme_enqueue_pricing_script()
+{
+    if (is_page_template('templates/page-pricing.php')) {
+        wp_enqueue_script(
+            'pricing-script',
+            get_template_directory_uri() . '/assets/js/pricing.js',
+            array('jquery'),
+            null,
+            true
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_pricing_script');
