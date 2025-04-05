@@ -90,5 +90,5 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   yearlyButton.addEventListener("click", () => handleButtonClick("yearly"));
 
-  handleButtonClick("monthly");
+  handleButtonClick("quarterly");
 });

@@ -29,7 +29,7 @@ get_template_part('parts/header'); ?>
 
             <?php if (have_rows('package_rep')): ?>
                 <div class="_pricing-selector flex items-center justify-center gap-3 py-8">
-                    <button id="monthly" class="btn-tab active"><i class="ph-duotone ph-moon text-xl"></i><?php esc_html_e('یک ماهه', 'befroosh'); ?></button>
+                    <button id="monthly" class="btn-tab"><i class="ph-duotone ph-moon text-xl"></i><?php esc_html_e('یک ماهه', 'befroosh'); ?></button>
                     <button id="quarterly" class="btn-tab"><i class="ph-duotone ph-leaf text-xl"></i><?php esc_html_e('سه ماهه', 'befroosh'); ?></button>
                     <button id="yearly" class="btn-tab"><i class="ph-duotone ph-globe-hemisphere-east text-xl"></i><?php esc_html_e('یک ساله', 'befroosh'); ?></button>
                 </div>
@@ -43,7 +43,7 @@ get_template_part('parts/header'); ?>
                         $base_price = get_sub_field('base_price');
                         $formatted_price = convert_numbers_to_persian(number_format($base_price, 0, '', '.'));
                         ?>
-                        <div class="_item flex flex-col gap-6 w-1/5 p-8 bg-radial border-2 border-gray-200 hover:border-primary rounded-2xl group hover:shadow-lg duration-300">
+                        <div class="_item flex flex-col gap-6 w-1/5 p-8 bg-radial border-2 border-gray-200 hover:border-primary rounded-2xl group hover:shadow-lg duration-300 bg-gray-50/40">
                             <?php if ($pack_conditions): ?>
                                 <h2 class="_pack-conditions text-xl text-center font-bold text-blue-900 duration-300"><?php echo esc_html(convert_numbers_to_persian($pack_conditions)); ?></h2>
                             <?php endif; ?>
@@ -84,7 +84,7 @@ get_template_part('parts/header'); ?>
                         $formatted_price = convert_numbers_to_persian(number_format($base_price, 0, '', '.'));
                         ?>
                         <div class="carousel-item">
-                            <div class="_item flex flex-col gap-4 p-8 bg-radial border-2 border-primary rounded-2xl">
+                            <div class="_item flex flex-col gap-4 p-8 bg-radial border-2 border-primary rounded-2xl bg-gray-50/40">
                                 <?php if ($pack_conditions): ?>
                                     <h2 class="_pack-conditions text-xl text-center font-bold text-blue-900 duration-300"><?php echo esc_html(convert_numbers_to_persian($pack_conditions)); ?></h2>
                                 <?php endif; ?>
