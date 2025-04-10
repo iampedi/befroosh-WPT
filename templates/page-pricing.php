@@ -4,7 +4,7 @@ Template Name: Pricing Page
 */
 get_template_part('parts/header'); ?>
 <main class="_page-pricing pt-6 pb-14 md:pt-8 md:pb-28">
-    <div class="container max-w-7xl mx-auto px-4 md:px-0">
+    <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
         <div class="_page-wrapper">
             <div class="_page-header flex flex-col items-center gap-3 md:gap-4 py-6 md:py-8 mb-6 md:mb-8">
                 <h1 class="text-[27px] font-bold text-center text-primary">

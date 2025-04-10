@@ -2,7 +2,7 @@
 
 <!-- All Pages Default Template -->
 <main class="_page-all main-padding">
-    <div class="container max-w-7xl mx-auto px-4 md:px-0">
+    <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
         <div class="_page-wrapper">
             <div class="_page-header flex flex-col items-center gap-4 py-8 mb-8">
                 <h1 class="text-3xl font-bold text-center text-primary">
