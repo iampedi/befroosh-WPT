@@ -13,9 +13,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <!-- <div id="page-loader">
+    <div id="page-loader">
         <span class="loading loading-ring loading-xl text-primary"></span>
-    </div> -->
+    </div>
 
     <header class="py-3 border-b-2 border-gray-100">
         <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
