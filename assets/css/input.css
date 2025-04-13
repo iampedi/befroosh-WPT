@@ -184,3 +184,16 @@ body.loaded #page-loader {
   border-left: 1px solid var(--color-blue-200);
   rotate: 45deg;
 }
+
+/* How it works */
+._sec-how-it-works ._item {
+  @apply border border-gray-200 bg-white shadow rounded-xl p-8 flex-grow flex flex-col gap-4 items-center;
+}
+
+._sec-how-it-works ._item h3 {
+  @apply text-lg font-bold;
+}
+
+._sec-how-it-works ._item i {
+  @apply text-5xl text-blue-900;
+}

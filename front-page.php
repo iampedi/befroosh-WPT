@@ -2,8 +2,9 @@
 
 <!-- Home Page Default Template -->
 <main class="_page-home">
+
     <?php if (have_rows('slider_items')): ?>
-        <div class="_slider py-5 md:py-10 bg-gradient-to-b from-gray-100/50 to-white">
+        <div class="_slider py-5 md:py-16 bg-gradient-to-b from-gray-100/50 to-white">
             <div class="container max-w-5xl mx-auto px-4 2xl:px-0">
                 <div class="_slider-wrapper flex flex-col md:flex-row gap-5 md:gap-0">
                     <div class="w-full md:w-3/5 flex flex-col">
@@ -54,6 +55,39 @@
             </div>
         </div>
     <?php endif; ?>
+
+    <div class="_sec-how-it-works bg-blue-50/50 pt-12 pb-16 border-y border-blue-100/50">
+        <div class="container max-w-5xl mx-auto px-4 2xl:px-0">
+            <div class="_sec-wrapper">
+                <h2 class="_sec-header text-xl font-bold text-blue-800 mb-10 text-center">
+                    بفروش چطور به شما کمک میکنه؟
+                </h2>
+
+                <div class="_sec-content flex flex-col md:flex-row justify-around gap-5">
+                    <div class="_item">
+                        <i class="ph-duotone ph-coffee"></i>
+                        <h3>عنوان اول</h3>
+                        <p>متن تستی</p>
+                    </div>
+                    <div class="_item">
+                        <i class="ph-duotone ph-coffee"></i>
+                        <h3>عنوان دوم</h3>
+                        <p>متن تستی</p>
+                    </div>
+                    <div class="_item">
+                        <i class="ph-duotone ph-coffee"></i>
+                        <h3>عنوان سوم</h3>
+                        <p>متن تستی</p>
+                    </div>
+                    <div class="_item">
+                        <i class="ph-duotone ph-coffee"></i>
+                        <h3>عنوان چهارم</h3>
+                        <p>متن تستی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
         <div class="_page-wrapper pb-6 md:pb-8">
