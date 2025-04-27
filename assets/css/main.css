@@ -866,6 +866,9 @@
     width: 100%;
     grid-auto-columns: max-content auto;
   }
+  .fixed {
+    position: fixed;
+  }
   .textarea {
     border: var(--border) solid #0000;
     min-height: calc(0.25rem * 20);
