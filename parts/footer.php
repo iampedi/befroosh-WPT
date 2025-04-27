@@ -29,7 +29,7 @@ get_template_part('parts/bottom_icons');
                 <div class="_footer-content flex flex-col md:flex-row items-center gap-12">
                     <div class="w-full md:w-2/5">
                         <div class="_footer-content flex flex-col items-start gap-4">
-                            <p class="text-gray-500 text-[15px]">بفروش ابزاری هوشمند در حوزه فروش و ارسال سفارش‌های آنلاین است و به فروشگاه‌های اینترنتی و فروشندگان در شبکه‌های اجتماعی، امکان مدیریت و نظارت بر فرآیند فروش و ارسال سفارش‌ها را می‌دهد.</p>
+                            <p class="text-gray-500 text-[15px]">بفروش یک ابزار هوشمند برای اتوماسیون فروش در اینستاگرام است. با دایرکت و کامنت هوشمند، ثبت سفارش خودکار و CRM ساده، مدیریت پیج را راحت‌تر، سریع‌تر و حرفه‌ای‌تر تجربه کنید.</p>
                         </div>
                     </div>
                     <div class="w-full md:w-1/5">
