@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 get_template_part('parts/bottom_icons');
-?>
+?> -->
 
 <footer>
     <div class="_footer pb-8 md:pb-18 pt-20 md:pt-24 bg-gradient-to-t from-gray-200 to-white">

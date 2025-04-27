@@ -5,7 +5,7 @@
 
     <?php if (have_rows('slider_items')): ?>
         <div class="_slider py-5 md:py-16 bg-gradient-to-b from-gray-100/50 to-white">
-            <div class="container max-w-5xl mx-auto px-4 2xl:px-0">
+            <div class="container max-w-6xl mx-auto px-4 2xl:px-0">
                 <div class="_slider-wrapper flex flex-col md:flex-row gap-5 md:gap-0">
                     <div class="w-full md:w-3/5 flex flex-col">
                         <div class="_slider-title">
@@ -44,9 +44,9 @@
                         <?php $index = 0; ?>
                         <?php while (have_rows('slider_items')): the_row(); ?>
                             <?php $image = get_sub_field('slider_item_image'); ?>
-                            <div class="_slider-item-image flex justify-center <?php echo $index === 0 ? '' : 'hidden'; ?>"
+                            <div class="_slider-item-image justify-end flex <?php echo $index === 0 ? '' : 'hidden'; ?>"
                                 id="slider-image-<?php echo $index; ?>">
-                                <img class="w-80" src="<?php echo esc_url($image); ?>" alt="">
+                                <img class="w-[360px]" src="<?php echo esc_url($image); ?>" alt="">
                             </div>
                             <?php $index++; ?>
                         <?php endwhile; ?>
