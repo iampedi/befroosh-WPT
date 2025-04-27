@@ -59,30 +59,30 @@
     <div class="_sec-how-it-works bg-blue-50/50 pt-12 pb-16 border-y border-blue-100/50">
         <div class="container max-w-5xl mx-auto px-4 2xl:px-0">
             <div class="_sec-wrapper">
-                <h2 class="_sec-header text-xl font-bold text-blue-800 mb-10 text-center">
+                <h2 class="_sec-header text-2xl font-bold text-blue-800 mb-10 text-center">
                     بفروش چطور به شما کمک میکنه؟
                 </h2>
 
-                <div class="_sec-content flex flex-col md:flex-row justify-around gap-5">
+                <div class="_sec-content grid md:grid-cols-2 md:flex-row flex-wrap justify-around gap-5">
                     <div class="_item">
-                        <i class="ph-duotone ph-coffee"></i>
-                        <h3>عنوان اول</h3>
-                        <p>متن تستی</p>
+                        <i class="ph-duotone ph-hand-coins"></i>
+                        <h3>فروش سریع‌تر از همیشه</h3>
+                        <p>پاسخ‌های خودکار به دایرکت و کامنت، سفارش‌گیری فوری، پرداخت در لحظه. بفروش باعث می‌شه مشتری قبل از اینکه منصرف شه، خرید کنه و فروش اینستاگرامی شما چند برابر بشه</p>
                     </div>
                     <div class="_item">
-                        <i class="ph-duotone ph-coffee"></i>
-                        <h3>عنوان دوم</h3>
-                        <p>متن تستی</p>
+                        <i class="ph-duotone ph-users-three"></i>
+                        <h3>جذب مشتری بیشتر</h3>
+                        <p>با ابزارهای بفروش، محصولاتت را در اینستاگرام به میلیون‌ها کاربر نمایش بده و مشتریان جدید جذب کن، کارهای تکراری رو حذف کن و زمانتو صرف تولید محتوا و رشد پیجت کن.</p>
                     </div>
                     <div class="_item">
-                        <i class="ph-duotone ph-coffee"></i>
-                        <h3>عنوان سوم</h3>
-                        <p>متن تستی</p>
+                        <i class="ph-duotone ph-handshake"></i>
+                        <h3>افزایش تعامل و تجربه بهتر مشتری</h3>
+                        <p>پاسخ فوری، پیگیری هوشمند، ارتباط حرفه‌ای و خرید بدون دردسر باعث می‌شه مشتری حس خوبی بگیره، عاشق شما بشه و دوباره برگرده.</p>
                     </div>
                     <div class="_item">
-                        <i class="ph-duotone ph-coffee"></i>
-                        <h3>عنوان چهارم</h3>
-                        <p>متن تستی</p>
+                        <i class="ph-duotone ph-lightning"></i>
+                        <h3>همه‌چیز یک‌جا، بدون نیاز به سایت</h3>
+                        <p>فروشگاه، فرم سفارش، پرداخت، لیست مشتری‌ها و سفارش‌ها و ...، همه در یک پنل ساده و یکپارچه، همه‌چیز مستقیم تو دایرکت اینستاگرام اتفاق می‌افته</p>
                     </div>
                 </div>
             </div>

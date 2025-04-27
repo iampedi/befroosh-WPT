@@ -187,13 +187,17 @@ body.loaded #page-loader {
 
 /* How it works */
 ._sec-how-it-works ._item {
-  @apply border border-gray-200 bg-white shadow rounded-xl p-8 flex-grow flex flex-col gap-4 items-center;
+  @apply border border-gray-200 bg-white shadow rounded-xl p-8 flex flex-col gap-4 items-center;
+}
+
+._sec-how-it-works ._item i {
+  @apply text-5xl text-blue-900;
 }
 
 ._sec-how-it-works ._item h3 {
   @apply text-lg font-bold;
 }
 
-._sec-how-it-works ._item i {
-  @apply text-5xl text-blue-900;
+._sec-how-it-works ._item p {
+  @apply text-center md:text-right;
 }
