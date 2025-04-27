@@ -35,9 +35,11 @@ add_action('wp_enqueue_scripts', 'remove_gutenberg_block_styles', 100);
 function mytheme_enqueue_styles()
 {
     wp_enqueue_style('tailwind-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0.0');
-    wp_enqueue_style('mytheme-style', get_stylesheet_uri());
+
+    wp_enqueue_style('mytheme-style', get_stylesheet_uri(), array('tailwind-style'), wp_get_theme()->get('Version'));
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
+
 
 // Add Theme Support
 add_theme_support('post-thumbnails');
