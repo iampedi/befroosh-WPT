@@ -50,8 +50,8 @@
                     ?>
                 </nav>
                 <div class="_buttons flex items-center gap-4">
-                    <a href="https://console.befroosh.app" class="text-gray-500 hover:text-primary font-medium hidden md:flex">ورود به پنل</a>
-                    <a href="https://console.befroosh.app/auth/signup" class="btn btn-primary hidden md:flex">ثبت نام</a>
+                    <a href="https://console.befroosh.app" class="text-gray-500 hover:text-primary font-medium hidden md:flex"><?php echo pll__('Login'); ?></a>
+                    <a href="https://console.befroosh.app/auth/signup" class="btn btn-primary hidden md:flex"><?php echo pll__('Sign Up'); ?></a>
                     <label for="mobile-menu" class="drawer-button md:hidden flex items-center text-blue-800"><i class="ph-bold ph-list text-4xl"></i></label>
                 </div>
             </div>
@@ -80,8 +80,8 @@
                 </nav>
                 <div class="divider mt-0 px-4 border-dashed"></div>
                 <div class="_buttons grid grid-cols-2 gap-3 px-4">
-                    <a href="https://console.befroosh.app" class="btn btn-primary w-full">ورود به پنل</a>
-                    <a href="https://console.befroosh.app/auth/signup" class="btn btn-success text-white w-full">ثبت نام</a>
+                    <a href="https://console.befroosh.app" class="btn btn-primary w-full"><?php echo pll__('Login'); ?></a>
+                    <a href="https://console.befroosh.app/auth/signup" class="btn btn-success text-white w-full"><?php echo pll__('Sign Up'); ?></a>
                 </div>
             </div>
         </div>
