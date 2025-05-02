@@ -15,7 +15,7 @@ add_action('after_setup_theme', 'register_my_menus');
 add_filter('nav_menu_link_attributes', function ($atts, $item, $args, $depth) {
     if ($args->theme_location === 'primary') {
         $atts['class'] = $depth === 0
-            ? 'flex items-center h-12 px-4 font-semibold hover:bg-gray-100 rounded-lg duration-300 hover:text-primary aria-[current=page]:bg-violet-50 aria-[current=page]:text-primary aria-[current=page]:cursor-default'
+            ? 'flex items-center h-12 px-4 font-semibold hover:bg-gray-100 rounded-lg duration-300 hover:text-primary aria-[current=page]:bg-violet-50 aria-[current=page]:text-primary aria-[current=page]:cursor-default text-blue-900'
             : '';
     }
     return $atts;

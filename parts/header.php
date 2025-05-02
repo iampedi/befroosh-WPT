@@ -31,7 +31,7 @@
         <span class="loading loading-ring loading-xl text-primary"></span>
     </div>
 
-    <header class="py-3 border-b-2 border-gray-100">
+    <header class="py-3 border-b-2 border-gray-100/90 bg-gradient-to-b from-white to-blue-50/75">
         <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
             <div class="flex items-center justify-between">
                 <div class="_logo">
