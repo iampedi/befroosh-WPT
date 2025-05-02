@@ -33,26 +33,41 @@ get_template_part('parts/header'); ?>
       </div>
 
       <div class="_contact-details flex flex-col md:flex-row justify-center gap-4 md:gap-8">
-        <div class="_item group">
-          <a href="https://t.me/+989360226688" target="_blank">
-            <i class="ph-duotone ph-handshake"></i>
-            <h2 class="_title">واحد فـروش</h2>
-          </a>
-        </div>
+        <?php if (pll_current_language() === 'fa'): ?>
+          <div class="_item group">
+            <a href="https://t.me/+989360226688" target="_blank">
+              <i class="ph-duotone ph-handshake"></i>
+              <h2 class="_title">واحد فـروش</h2>
+            </a>
+          </div>
 
-        <div class="_item group">
-          <a href="https://t.me/+989360226688" target="_blank">
-            <i class="ph-duotone ph-lifebuoy"></i>
-            <h2 class="_title">پشتیبانی</h2>
-          </a>
-        </div>
+          <div class="_item group">
+            <a href="https://t.me/+989360226688" target="_blank">
+              <i class="ph-duotone ph-lifebuoy"></i>
+              <h2 class="_title">پشتیبانی</h2>
+            </a>
+          </div>
 
-        <div class="_item group">
-          <a href="https://t.me/+989122406612" target="_blank">
-            <i class="ph-duotone ph-user-sound"></i>
-            <h2 class="_title">مدیریت</h2>
-          </a>
-        </div>
+          <div class="_item group">
+            <a href="https://t.me/+989122406612" target="_blank">
+              <i class="ph-duotone ph-user-sound"></i>
+              <h2 class="_title">مدیریت</h2>
+            </a>
+          </div>
+        <?php else: ?>
+          <div class="_item group">
+            <a href="mailto:info@befroosh.app">
+              <i class="ph-duotone ph-user-sound"></i>
+              <h2 class="_title">Management</h2>
+            </a>
+          </div>
+          <div class="_item group">
+            <a href="mailto:support@befroosh.app">
+              <i class="ph-duotone ph-lifebuoy"></i>
+              <h2 class="_title">Support</h2>
+            </a>
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
