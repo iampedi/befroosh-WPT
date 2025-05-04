@@ -24,7 +24,7 @@ add_filter('nav_menu_link_attributes', function ($atts, $item, $args, $depth) {
 // Mobile Menu Links Classes
 add_filter('nav_menu_link_attributes', function ($atts, $item, $args, $depth) {
     if ($args->theme_location === 'mobile') {
-        $atts['class'] = 'flex items-center h-11 gap-3 px-4 py-0 font-medium text-base aria-[current=page]:bg-blue-100/70 rounded-lg duration-300 hover:text-primary focus-within:bg-blue-100';
+        $atts['class'] = 'flex items-center h-12 gap-3 px-4 py-0 font-semibold text-base aria-[current=page]:bg-blue-100/70 rounded-lg duration-300 hover:text-primary focus-within:bg-blue-100';
 
         if (!empty($item->classes) && is_array($item->classes)) {
             foreach ($item->classes as $class) {
