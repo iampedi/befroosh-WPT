@@ -8,7 +8,7 @@
             <div class="_wrapper">
                 <?php if (function_exists('pll_current_language') && pll_current_language() === 'fa') : ?>
                     <div class="_socials flex flex-col pb-12 gap-5 items-center">
-                        <h4 class="font-semibold text-blue-800">بفروش را شبکه‌های اجتماعی دنبال کنید:</h4>
+                        <h4 class="font-bold text-blue-800">بفروش را شبکه‌های اجتماعی دنبال کنید:</h4>
                         <div class="_items flex items-center justify-center gap-5 md:gap-6 w-full md:w-auto bg-gray-200/15 inset-shadow-sm inset-shadow-gray-200 rounded-4xl inset-ring inset-ring-gray-200/50 py-2.5 md:py-3 md:px-6">
                             <div class="_item">
                                 <a href="https://www.instagram.com/befroosh.app" target="_blank" rel="noopener noreferrer" data-tip="اینستاگرام" class="flex items-center text-gray-400 hover:text-fuchsia-700 duration-300 tooltip"><i class="ph ph-instagram-logo text-3xl"></i></a>
@@ -32,7 +32,7 @@
                 <div class="_footer-content flex flex-col md:flex-row items-center gap-12">
                     <div class="w-full md:w-2/5">
                         <div class="_footer-content flex flex-col items-start gap-4">
-                            <p class="text-gray-500 text-[15px]"><?php echo pll__('Footer SEO Text'); ?></p>
+                            <p class="text-gray-500 font-normal leading-relaxed text-[15px]"><?php echo pll__('Footer SEO Text'); ?></p>
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@
                                     wp_nav_menu([
                                         'theme_location' => 'footer_1',
                                         'container'      => false,
-                                        'menu_class'     => 'text-[15px] leading-7 text-gray-500 [&>li>a]:hover:text-blue-900 duration-300',
+                                        'menu_class'     => 'text-[15px] leading-7 font-normal text-gray-500 [&>li>a]:hover:text-blue-900 duration-300',
                                     ]);
                                     ?>
                                 </div>
@@ -74,7 +74,7 @@
                                     wp_nav_menu([
                                         'theme_location' => 'footer_2',
                                         'container'      => false,
-                                        'menu_class'     => 'text-[15px] leading-7 text-gray-500 [&>li>a]:hover:text-blue-900 duration-300',
+                                        'menu_class'     => 'text-[15px] leading-7 font-normal text-gray-500 [&>li>a]:hover:text-blue-900 duration-300',
                                     ]);
                                     ?>
                                 </div>
@@ -90,7 +90,7 @@
         <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
             <div class="_wrapper text-center">
                 <?php if (function_exists('pll__')) : ?>
-                    <p class="text-gray-400 text-xs md:text-sm text-center bg-gray-300/20 py-2.5 md:px-5 inline-block rounded-full inset-shadow-xs w-full md:w-auto">
+                    <p class="text-gray-400 text-xs font-normal md:text-sm text-center bg-gray-300/20 py-2.5 md:px-5 inline-block rounded-full inset-shadow-xs w-full md:w-auto">
                         <?php echo pll__('Footer Prefix'); ?>
                         <a href="<?php echo home_url(); ?>" class="text-gray-500"><?php bloginfo('name'); ?></a>
                         <?php echo pll__('Footer Suffix'); ?>

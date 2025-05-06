@@ -35,9 +35,9 @@
         <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
             <div class="flex items-center justify-between">
                 <div class="_logo">
-                    <a href="/" class="flex items-center gap-3">
+                    <a href=<?php echo is_rtl() ? '/' : '/en'; ?> class="flex items-center gap-3">
                         <img class="w-10" src="<?php echo get_template_directory_uri(); ?>/assets/images/befroosh-logo.svg" alt="Logo">
-                        <h1 class="text-[#2563eb] text-2xl font-black"><?php bloginfo('name'); ?></h1>
+                        <div class="text-[#2563eb] text-2xl font-black"><?php bloginfo('name'); ?></div>
                     </a>
                 </div>
                 <nav class="hidden md:block">
@@ -50,8 +50,8 @@
                     ?>
                 </nav>
                 <div class="_buttons flex items-center gap-4">
-                    <a href="https://console.befroosh.app" class="text-gray-500 hover:text-primary font-medium flex"><?php echo pll__('Login'); ?></a>
-                    <a href="https://console.befroosh.app/auth/signup" class="btn btn-primary hidden md:flex"><?php echo pll__('Sign Up'); ?></a>
+                    <a href=<?php echo is_rtl() ? "https://console.befroosh.app" : "https://console.befroosh.app/en"; ?> class="text-gray-500 hover:text-primary font-medium flex"><?php echo pll__('Login'); ?></a>
+                    <a href=<?php echo is_rtl() ? "https://console.befroosh.app/auth/signup" : "https://console.befroosh.app/en/auth/signup"; ?> class="btn btn-primary hidden md:flex"><?php echo pll__('Sign Up'); ?></a>
                     <label for="mobile-menu" class="drawer-button md:hidden flex items-center text-blue-800"><i class="ph-bold ph-list text-4xl"></i></label>
                 </div>
             </div>
@@ -81,8 +81,8 @@
                 <div class="divider mt-0 px-4 before:bg-blue-100 after:bg-blue-100"></div>
 
                 <div class="_buttons grid grid-cols-2 gap-3 px-4">
-                    <a href="https://console.befroosh.app" class="btn btn-primary w-full"><?php echo pll__('Login'); ?></a>
-                    <a href="https://console.befroosh.app/auth/signup" class="btn btn-success text-white w-full"><?php echo pll__('Sign Up'); ?></a>
+                    <a href=<?php echo is_rtl() ? "https://console.befroosh.app" : "https://console.befroosh.app/en"; ?> class="btn btn-primary w-full"><?php echo pll__('Login'); ?></a>
+                    <a href=<?php echo is_rtl() ? "https://console.befroosh.app/auth/signup" : "https://console.befroosh.app/en/auth/signup"; ?> class="btn btn-success text-white w-full"><?php echo pll__('Sign Up'); ?></a>
                 </div>
             </div>
         </div>

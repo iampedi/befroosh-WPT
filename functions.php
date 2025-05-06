@@ -16,6 +16,9 @@ add_action('init', function () {
     if (function_exists('pll_register_string')) {
         pll_register_string('login', 'Login', 'General');
         pll_register_string('sign_up', 'Sign Up', 'General');
+        pll_register_string('slider_title', 'Slider Title', 'Slider');
+        pll_register_string('slider_description', 'Slider Description', 'Slider');
+        pll_register_string('slider_button', 'Slider Button', 'Slider');
         pll_register_string('no_faq', 'No faq found', 'FAQ');
         pll_register_string('contact_support_btn', 'Contact Support', 'FAQ');
         pll_register_string('need_more_help_text', 'Need more help?', 'FAQ');
