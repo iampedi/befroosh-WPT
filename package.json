@@ -1,20 +1,25 @@
 {
   "name": "befroosh",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "prettier.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/main.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/main.css --minify"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iampedi/befroosh-WPT.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iampedi/befroosh-WPT/issues"
+  },
+  "homepage": "https://github.com/iampedi/befroosh-WPT#readme",
   "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.14",
-    "tailwindcss": "^4.0.14"
-  },
-  "devDependencies": {
-    "daisyui": "^5.0.35"
+    "@tailwindcss/cli": "^4.1.5",
+    "daisyui": "^5.0.35",
+    "tailwindcss": "^4.1.5"
   }
 }

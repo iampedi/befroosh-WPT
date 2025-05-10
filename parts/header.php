@@ -26,7 +26,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('scroll-smooth'); ?>>
     <div id="page-loader">
         <span class="loading loading-ring loading-xl text-primary"></span>
     </div>

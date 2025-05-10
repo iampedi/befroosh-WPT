@@ -100,11 +100,12 @@ function get_reading_time($post_id = null, $wpm = 180)
 //
 // Convert English Numbers to Persian
 //
-function convert_numbers_to_persian($string)
+function convert_numbers_to_persian($input)
 {
+    $input = (string) $input; // اطمینان از رشته بودن ورودی
     $english = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     $persian = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
-    return str_replace($english, $persian, $string);
+    return str_replace($english, $persian, $input);
 }
 
 //

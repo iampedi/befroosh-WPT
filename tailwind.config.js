@@ -1,17 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: ["./**/*.php", "./**/*.html", "./**/*.js", "./**/*.css"],
+  content: ['./**/*.php', './**/*.html', './assets/js/**/*.js'],
   theme: {
-    extend: {
-      fontFamily: {
-        anjoman: ["AnjomanMaxVF", "sans-serif"],
-      },
-    },
+    extend: {},
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: false,
-    rtl: true,
-    prefix: "daisy-",
-  },
-};
+  plugins: [],
+}
