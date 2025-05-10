@@ -11,10 +11,10 @@
                 ?>
                 <button
                     type="button"
-                    class="btn-tab border border-transparent px-6 md:px-4 rounded-xl hover:bg-blue-50 hover:border-blue-100 cursor-pointer flex flex-col items-center justify-center gap-1.5 duration-200 h-[120px] md:h-[94px] md:flex-1 group [&.active]:bg-blue-100/75 [&.active]:border-blue-200 [&.active_span]:text-blue-900 [&.active_span]:font-extrabold [&.active_i]text-blue-900 <?php echo ($tab_index === 0) ? 'active' : ''; ?>"
+                    class="btn-tab border border-transparent px-6 md:px-4 rounded-xl hover:bg-purple-50 hover:border-purple-100 cursor-pointer flex flex-col items-center justify-center gap-1.5 duration-200 h-[120px] md:h-[94px] md:flex-1 group [&.active]:bg-purple-100/75 [&.active]:border-purple-200 [&.active_span]:text-purple-700 [&.active_span]:font-extrabold [&.active_i]:text-purple-700 <?php echo ($tab_index === 0) ? 'active' : ''; ?>"
                     onclick="showTab(<?php echo $tab_index; ?>)">
-                    <i class="ph-duotone <?php echo esc_attr($tab_icon); ?> text-3xl text-gray-400/75 group-hover:text-blue-800/90 duration-200"></i>
-                    <span class="text-gray-400 group-hover:text-blue-800 duration-200 text-[17px]"><?php echo esc_html($tab_title); ?></span>
+                    <i class="ph-duotone <?php echo esc_attr($tab_icon); ?> text-3xl text-gray-400/75 group-hover:text-purple-700/90 duration-200"></i>
+                    <span class="text-gray-400 group-hover:text-purple-700 duration-200 text-[17px]"><?php echo esc_html($tab_title); ?></span>
                 </button>
                 <?php $tab_index++; ?>
             <?php endwhile; ?>
