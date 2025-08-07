@@ -1,10 +1,9 @@
+/** @type {import("prettier").Config} */
 module.exports = {
-    singleQuote: true,
-    semi: true,
-    tabWidth: 2,
-    trailingComma: 'es5',
-    bracketSpacing: true,
-    arrowParens: 'always',
-    plugins: [require('prettier-plugin-tailwindcss')],
-  };
-  
+  plugins: [require("prettier-plugin-tailwindcss")],
+  tailwindFunctions: ["clsx", "cva", "tw"], // اختیاریه، اگه از توابع سفارشی استفاده می‌کنی
+  semi: false,
+  singleQuote: true,
+  tabWidth: 2,
+  printWidth: 100,
+};

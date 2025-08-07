@@ -15,16 +15,23 @@ add_action('after_setup_theme', 'register_my_menus');
 add_filter('nav_menu_link_attributes', function ($atts, $item, $args, $depth) {
     if ($args->theme_location === 'primary') {
         $atts['class'] = $depth === 0
-            ? 'flex items-center h-12 px-4 font-semibold hover:bg-gray-100 rounded-lg duration-300 hover:text-primary aria-[current=page]:bg-violet-50 aria-[current=page]:text-primary aria-[current=page]:cursor-default text-blue-900'
+            ? 'flex items-center h-9 px-4 text-sm text-neutral-600 font-semibold hover:bg-neutral-100 rounded-lg duration-300 hover:text-primary aria-[current=page]:bg-neutral-100 aria-[current=page]:text-primary aria-[current=page]:cursor-default'
             : '';
     }
     return $atts;
 }, 10, 4);
 
 // Mobile Menu Links Classes
+add_filter('nav_menu_css_class', function ($classes, $item, $args, $depth) {
+    if ($args->theme_location === 'mobile') {
+        $classes[] = 'border-b last:border-b-0';
+    }
+    return $classes;
+}, 10, 4);
+
 add_filter('nav_menu_link_attributes', function ($atts, $item, $args, $depth) {
     if ($args->theme_location === 'mobile') {
-        $atts['class'] = 'flex items-center h-12 gap-3 px-4 py-0 font-semibold text-base aria-[current=page]:bg-blue-100/70 rounded-lg duration-300 hover:text-primary focus-within:bg-blue-100';
+        $atts['class'] = 'flex items-center h-12 gap-3 px-4 py-0 font-semibold text-base aria-[current=page]:bg-neutral-100/70 duration-300 hover:text-primary focus-within:bg-neutral-100';
 
         if (!empty($item->classes) && is_array($item->classes)) {
             foreach ($item->classes as $class) {
