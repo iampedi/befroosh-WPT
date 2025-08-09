@@ -95,7 +95,7 @@ body.loaded #page-loader {
   }
 
   ._contact-details ._item {
-    @apply flex flex-col items-start border-b bg-gradient-to-tr from-neutral-100/80 to-white p-7 last:border-b-0 hover:bg-gradient-to-br md:border-l md:last:border-l-0;
+    @apply flex flex-col items-start border-b bg-gradient-to-tr from-neutral-100/80 to-white p-7 last:border-b-0 hover:bg-gradient-to-br md:border-b-0 md:border-l md:last:border-l-0;
   }
 
   ._contact-details ._item i {
