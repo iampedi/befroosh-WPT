@@ -19,6 +19,7 @@ add_action('init', function () {
         pll_register_string('slider_title', 'Slider Title', 'Slider');
         pll_register_string('slider_description', 'Slider Description', 'Slider');
         pll_register_string('slider_button', 'Slider Button', 'Slider');
+        pll_register_string('features_description', 'Features Description', 'Features');
         pll_register_string('no_faq', 'No faq found', 'FAQ');
         pll_register_string('contact_support_btn', 'Contact Support', 'FAQ');
         pll_register_string('need_more_help_text', 'Need more help?', 'FAQ');
