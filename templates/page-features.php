@@ -56,10 +56,10 @@ get_template_part('parts/header'); ?>
                         }
                     ?>
                         <div class="<?php echo $classes; ?> group hover:bg-blue-50/75 duration-300">
-                            <div class="aspect-5/3">
+                            <!-- <div>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/feat-demo-img.png" />
-                            </div>
-                            <div class="p-6 md:px-7 pb-10 pt-3.5">
+                            </div> -->
+                            <div class="p-6 md:p-7">
                                 <!-- <i class="ph-duotone ph-<?php echo esc_html($icon ?: 'star'); ?> text-4xl text-gray-500"></i> -->
                                 <h3 class="mb-2 font-bold line-clamp-1"><?php echo esc_html($title); ?></h3>
                                 <p class=" font-normal text-neutral-700 line-clamp-4"><?php echo wp_kses_post($description); ?></p>
