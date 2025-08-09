@@ -11,15 +11,17 @@
                         $tab_id = 'tab-' . $i;
                 ?>
                         <h2
-                            class="pd-tab border-b py-3.5 text-right w-full px-3 md:px-7 font-semibold hover:bg-neutral-50 hover:cursor-pointer <?php echo $i === 0 ? 'bg-neutral-50 active-tab' : ''; ?>"
-                            data-target="<?php echo esc_attr($tab_id); ?>">
+                            class="pd-tab text-[15px] flex items-center gap-1.5 md:gap-2 border-b py-3.5 text-right w-full px-3 md:px-7 font-bold hover:bg-neutral-50 hover:cursor-pointer data-[active=true]:text-primary text-neutral-500 <?php echo $i === 0 ? 'active-tab' : ''; ?>"
+                            data-target="<?php echo esc_attr($tab_id); ?>"
+                            data-active="<?php echo $i === 0 ? 'true' : 'false'; ?>">
+                            <i class="ph ph-star text-xl text-yellow-500"></i>
                             <?php echo esc_html($title); ?>
-                            </ا>
-                    <?php
+                        </h2>
+                <?php
                         $i++;
                     endwhile;
                 endif;
-                    ?>
+                ?>
             </div>
 
             <div class="pd-tab-contents p-3 md:p-7">

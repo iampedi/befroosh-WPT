@@ -18,7 +18,7 @@ get_template_part('parts/header'); ?>
                         $page_description = get_field('page_description', $page_id);
 
                         if (!empty($page_description)): ?>
-                            <div class="text-neutral-500 font-normal text-[15px]">
+                            <div class="text-neutral-500 font-normal">
                                 <?php echo wp_kses_post($page_description); ?>
                             </div>
                         <?php else: ?>

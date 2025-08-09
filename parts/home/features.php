@@ -2,7 +2,7 @@
     <div class="border-x max-w-[1080px] mx-auto">
         <div class="py-10 text-center max-w-2xl mx-auto">
             <i class="ph-duotone ph-lightning text-4xl text-blue-900"></i>
-            <h2 class="text-2xl font-semibold mb-1.5">
+            <h2 class="text-xl md:text-2xl font-semibold mb-1.5">
                 امکانات دایرکت هوشمند بفروش
             </h2>
             <p class="text-neutral-500 font-normal">دایرکت هوشمند بفروش مجموعه‌ای از امکانات کاربردی را در اختیار شما قرار می‌دهد که فرایند فروش و ارتباط با مشتری را به شکلی کاملا بهینه می‌کند. برخی از امکانات کلیدی عبارت‌اند از:</p>
@@ -28,7 +28,7 @@
                         </div> -->
                         <div class="p-6 md:px-7">
                             <!-- <i class="ph-duotone ph-<?php echo esc_html($icon ?: 'star'); ?> text-4xl text-gray-500"></i> -->
-                            <h3 class="mb-2 font-bold line-clamp-1"><?php echo esc_html($title); ?></h3>
+                            <h3 class="mb-2 text-lg font-bold line-clamp-1"><?php echo esc_html($title); ?></h3>
                             <p class=" font-normal text-neutral-700 line-clamp-4"><?php echo wp_kses_post($description); ?></p>
                         </div>
                     </div>

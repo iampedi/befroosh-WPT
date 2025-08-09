@@ -41,23 +41,43 @@
         const tabs = document.querySelectorAll(".pd-tab");
         const contents = document.querySelectorAll(".pd-tab-content");
 
-        tabs.forEach(tab => {
-            tab.addEventListener("click", () => {
-                const targetId = tab.dataset.target;
+        function activate(tab) {
+            const targetId = tab.dataset.target;
 
-                // Remove active class from all
-                tabs.forEach(t => t.classList.remove("bg-neutral-50", "active-tab"));
-                contents.forEach(c => c.classList.add("hidden"));
-
-                // Add active class to clicked tab
-                tab.classList.add("bg-neutral-50", "active-tab");
-
-                // Show selected tab content
-                document.getElementById(targetId)?.classList.remove("hidden");
+            // reset all
+            tabs.forEach(t => {
+                t.classList.remove("bg-neutral-50", "active-tab");
+                t.setAttribute("data-active", "false");
+                t.setAttribute("aria-selected", "false");
+                const icon = t.querySelector("i");
+                if (icon) {
+                    icon.classList.remove("ph-duotone");
+                    icon.classList.add("ph");
+                }
             });
-        });
+            contents.forEach(c => c.classList.add("hidden"));
+
+            // set active
+            tab.classList.add("bg-neutral-50", "active-tab");
+            tab.setAttribute("data-active", "true");
+            tab.setAttribute("aria-selected", "true");
+            const activeIcon = tab.querySelector("i");
+            if (activeIcon) {
+                activeIcon.classList.remove("ph");
+                activeIcon.classList.add("ph-duotone");
+            }
+
+            document.getElementById(targetId)?.classList.remove("hidden");
+        }
+
+        tabs.forEach(tab => tab.addEventListener("click", () => activate(tab)));
+
+        // init (اگر چیزی فعال نیست)
+        const current = document.querySelector('.pd-tab[data-active="true"]') || tabs[0];
+        if (current) activate(current);
     });
 </script>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {

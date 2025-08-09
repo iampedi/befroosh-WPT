@@ -4,56 +4,66 @@ Template Name: Contact Page
 */
 get_template_part('parts/header'); ?>
 
-<main class="_page-contact-list pt-6 pb-14 md:pt-8 md:pb-28">
-  <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
-    <div class="_page-wrapper">
-      <div class="_page-header flex flex-col items-center gap-3 md:gap-4 py-6 md:py-8 mb-6 md:mb-8">
-        <h1 class="text-[27px] font-bold text-center text-primary">
-          <?php the_title(); ?>
-        </h1>
+<main class="_page-featrues border-t">
+  <div class="_title px-3.5 md:px-0">
+    <div class="max-w-[1080px] border-x mx-auto py-10 md:py-10">
+      <div class="container !max-w-2xl">
+        <div class="text-center space-y-1.5">
+          <h1 class="text-2xl font-semibold">
+            <?php the_title(); ?>
+          </h1>
 
-        <?php
-        if (function_exists('get_field')) {
-          $page_id = get_the_ID();
-          $page_description = get_field('page_description', $page_id);
+          <?php
+          if (function_exists('get_field')) {
+            $page_id = get_the_ID();
+            $page_description = get_field('page_description', $page_id);
 
-          if (!empty($page_description)): ?>
-            <div class="_page-description text-center text-[17px] font-medium text-gray-500">
-              <?php echo wp_kses_post($page_description); ?>
-            </div>
-          <?php else: ?>
-            <div></div>
-        <?php endif;
-        }
-        ?>
+            if (!empty($page_description)): ?>
+              <div class="text-neutral-500 font-normal">
+                <?php echo wp_kses_post($page_description); ?>
+              </div>
+            <?php else: ?>
+              <div></div>
+          <?php endif;
+          }
+          ?>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="_page-content pt-14">
-        <?php the_content(); ?>
-      </div>
-
-      <div class="_contact-details flex flex-col md:flex-row justify-center gap-4 md:gap-8">
+  <div class="_contact-details px-3.5 md:px-0 border-y">
+    <div class="max-w-[1080px] border-x mx-auto">
+      <div class="grid md:grid-cols-3 ">
         <?php if (pll_current_language() === 'fa'): ?>
           <div class="_item group">
-            <a href="https://t.me/+989360226688" target="_blank">
-              <i class="ph-duotone ph-handshake"></i>
-              <h2 class="_title">واحد فـروش</h2>
+            <i class="ph-duotone ph-handshake"></i>
+            <h2 class="_title">پشتیبانی فـروش</h2>
+            <p>در صورت بروز هرگونه مشکل در پرداخت و یا فعال شدن اشتراک با همکاران ما در واحد فروش ارتباط بگیرید.</p>
+            <a href="https://t.me/+989360226688" target="_blank" class="btn btn-primary">
+              تماس با کارشناس
             </a>
           </div>
 
           <div class="_item group">
-            <a href="https://t.me/+989360226688" target="_blank">
-              <i class="ph-duotone ph-lifebuoy"></i>
-              <h2 class="_title">پشتیبانی</h2>
+            <i class="ph-duotone ph-user-sound"></i>
+            <h2 class="_title">پشتیبانی مشتریان</h2>
+            <p>در صورت نیاز به کمک در استفاده از سامانه بفروش و یا مشورت در برای بهره‌وری بیشتر از سرویس‌ها با ما تماس بگیرید.</p>
+            <a href="https://t.me/+989122406612" target="_blank" class="btn btn-primary">
+              تماس با کارشناس
             </a>
           </div>
 
           <div class="_item group">
-            <a href="https://t.me/+989122406612" target="_blank">
-              <i class="ph-duotone ph-user-sound"></i>
-              <h2 class="_title">مدیریت</h2>
+            <i class="ph-duotone ph-lifebuoy"></i>
+            <h2 class="_title">پشتیبانی فنی</h2>
+            <p>در صورت بروز هرگونه اختلال در عملکرد سایت و یا سرویس‌های سامانه بفروش با واحد پشتیبانی فنی تماس بگیرید.</p>
+            <a href="https://t.me/+989360226688" target="_blank" class="btn btn-primary">
+              تماس با کارشناس
             </a>
           </div>
+
+
         <?php else: ?>
           <div class="_item group">
             <a href="mailto:info@befroosh.app">
@@ -70,6 +80,10 @@ get_template_part('parts/header'); ?>
         <?php endif; ?>
       </div>
     </div>
+  </div>
+
+  <div class="_page-content">
+    <?php the_content(); ?>
   </div>
 </main>
 

@@ -1,8 +1,8 @@
 <div class="border-y px-3.5 md:px-0">
     <div class="border-x max-w-[1080px] mx-auto">
         <div class="container">
-            <div class="pt-7 pb-14 md:py-14 max-w-3xl mx-auto">
-                <h2 class="text-2xl font-semibold mt-2.5 text-center mb-7">
+            <div class="py-10 md:py-14 max-w-3xl mx-auto">
+                <h2 class="text-xl md:text-2xl font-semibold text-center mb-7">
                     سوالات متداول شما
                 </h2>
 
@@ -33,7 +33,7 @@
                     <?php endif; ?>
                 </div>
 
-                <div class="text-center mt-14">
+                <div class="text-center mt-10">
                     <a class="btn btn-primary" href="/faq">
                         <i class="ph ph-question"></i>
                         سوالات بیشتر
