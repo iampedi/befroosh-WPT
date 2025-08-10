@@ -99,11 +99,11 @@ body.loaded #page-loader {
   }
 
   ._contact-details ._item i {
-    @apply text-5xl;
+    @apply text-4xl;
   }
 
   ._contact-details ._item ._title {
-    @apply pt-1.5 pb-3 text-2xl font-semibold;
+    @apply pt-1.5 pb-3 text-xl font-semibold;
   }
 
   ._contact-details ._item p {
@@ -145,7 +145,7 @@ body.loaded #page-loader {
 }
 
 /* Home Page Override CSS  */
-._slider ._item-info .collapse-title {
+/* ._slider ._item-info .collapse-title {
   @apply min-h-0 cursor-pointer px-0 py-1.5 text-lg leading-relaxed font-medium text-neutral-400 xl:py-2;
 }
 
@@ -159,7 +159,7 @@ body.loaded #page-loader {
 
 ._slider ._item-info.active .collapse-title i {
   @apply text-yellow-500;
-}
+} */
 
 /* ._slider ._item-info.collapse {
   >input:is([type="checkbox"], [type="radio"]) {

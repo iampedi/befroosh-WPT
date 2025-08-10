@@ -4,32 +4,38 @@ Template Name: FAQ Page
 */
 get_template_part('parts/header'); ?>
 
-<main class="_page-faq pt-6 pb-14 md:pt-8 md:pb-28">
-  <div class="container max-w-7xl mx-auto px-4 2xl:px-0">
-    <div class="_page-wrapper">
-      <div class="_page-header flex flex-col items-center gap-3 md:gap-4 py-6 md:py-8 mb-6 md:mb-8">
-        <h1 class="text-[27px] font-bold text-center text-primary">
-          <?php the_title(); ?>
-        </h1>
+<main class="_page-faq border-t">
+  <div class="px-3.5 md:px-0">
+    <div class="max-w-[1080px] border-x mx-auto py-10 md:py-20">
+      <div class="container !max-w-2xl">
+        <div class="text-center space-y-1.5">
+          <h1 class="text-2xl font-bold">
+            <?php the_title(); ?>
+          </h1>
 
-        <?php
-        if (function_exists('get_field')) {
-          $page_id = get_the_ID();
-          $page_description = get_field('page_description', $page_id);
+          <?php
+          if (function_exists('get_field')) {
+            $page_id = get_the_ID();
+            $page_description = get_field('page_description', $page_id);
 
-          if (!empty($page_description)): ?>
-            <div class="_page-description text-center text-[17px] font-medium text-gray-500">
-              <?php echo wp_kses_post($page_description); ?>
+            if (!empty($page_description)): ?>
+              <div class="text-neutral-500 font-normal">
+                <?php echo wp_kses_post($page_description); ?>
 
-            </div>
-          <?php else: ?>
-            <div>...</div>
-        <?php endif;
-        }
-        ?>
+              </div>
+            <?php else: ?>
+              <div>...</div>
+          <?php endif;
+          }
+          ?>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="_faq-accordion max-w-2xl mx-auto space-y-2">
+  <div class="_faq-accordion px-3.5 md:px-0 border-y">
+    <div class="max-w-[1080px] border-x mx-auto pt-7 pb-20">
+      <div class="container !max-w-3xl">
         <?php if (have_rows('qa_field')): ?>
           <?php
           $i = 0;
@@ -37,13 +43,14 @@ get_template_part('parts/header'); ?>
             $question = get_sub_field('question_field');
             $answer = get_sub_field('answer_field');
           ?>
-            <div class="collapse collapse-plus text-blue-900 hover:bg-blue-50 rounded-2xl duration-150 ease-out">
-              <input type="radio" name="faq-accordion" class="peer" <?php echo $i === 0 ? 'checked' : ''; ?> />
-              <div class="collapse-title font-bold peer-checked:bg-blue-50 flex items-center">
+            <div class="collapse group border-b collapse-plus rounded-none text-primary duration-150 ease-out">
+              <input type="radio" name="faq-accordion" class="peer" />
+              <div class="collapse-title  peer-not-checked:group-hover:bg-neutral-50">
                 <span class="mb-0 p-0 flex items-center h-full"><?php echo esc_html($question); ?></span>
               </div>
-              <div class="collapse-content peer-checked:bg-blue-50">
-                <span class="border-blue-800 flex px-3 <?php echo is_rtl() ? 'border-r-2' : 'border-l-2'; ?>  "><?php echo wp_kses_post($answer); ?></span>
+              <i class="ph ph-plus transition-transform duration-200 peer-checked:rotate-45 absolute left-0 top-5 text-neutral-500 peer-checked:text-primary"></i>
+              <div class="collapse-content px-0">
+                <span class="text-neutral-700 text-[15px] flex font-normal leading-normal"><?php echo wp_kses_post($answer); ?></span>
               </div>
             </div>
           <?php
@@ -54,26 +61,31 @@ get_template_part('parts/header'); ?>
           <p class="text-gray-500 text-center"><?php echo pll__('No faq found'); ?></p>
         <?php endif; ?>
       </div>
-
-      <div class="border border-fuchsia-200 bg-fuchsia-50/50 rounded-2xl p-5 max-w-2xl mx-auto mt-16">
-        <?php
-        $current_lang = pll_current_language(); // مثلا 'en' یا 'fa'
-        $contact_url = '/' . $current_lang . '/contact';
-        ?>
-        <p class="text-indigo-800 m-0 text-center"><?php echo pll__('Need more help?'); ?></p>
-        <button class="btn btn-primary mt-4 block mx-auto"><a href="<?php echo esc_url($contact_url); ?>"><?php echo pll__('Contact Support'); ?></a></button>
-      </div>
-
-      <?php
-      $content = get_the_content();
-      if (!empty(trim($content))): ?>
-        <div class="_page-content mt-16">
-          <?php the_content(); ?>
-        </div>
-      <?php endif; ?>
-
     </div>
   </div>
+
+  <div class="_faq-accordion px-3.5 md:px-0 border-b">
+    <div class="max-w-[1080px] border-x mx-auto py-10 bg-neutral-50">
+      <div class="container">
+        <div class="text-center space-y-3.5">
+          <?php
+          $current_lang = pll_current_language(); // مثلا 'en' یا 'fa'
+          $contact_url = '/' . $current_lang . '/contact';
+          ?>
+          <p class=""><?php echo pll__('Need more help?'); ?></p>
+          <button class="btn btn-primary"><a href="<?php echo esc_url($contact_url); ?>"><?php echo pll__('Contact Support'); ?></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <?php
+  $content = get_the_content();
+  if (!empty(trim($content))): ?>
+    <div class="_page-content mt-16">
+      <?php the_content(); ?>
+    </div>
+  <?php endif; ?>
 </main>
 
 <?php get_template_part('parts/footer'); ?>
