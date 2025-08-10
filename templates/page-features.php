@@ -3,9 +3,10 @@
 Template Name: Features Page
 */
 get_template_part('parts/header'); ?>
+
 <main class="_page-featrues border-t">
     <div class="_title px-3.5 md:px-0">
-        <div class="max-w-[1080px] border-x mx-auto py-10 md:py-14">
+        <div class="max-w-[1080px] border-x mx-auto py-10 md:py-20">
             <div class="container !max-w-2xl">
                 <div class="text-center space-y-1.5">
                     <h1 class="text-2xl font-bold">
