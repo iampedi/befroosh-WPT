@@ -9,8 +9,8 @@
 }
 
 :root {
-  --primary: oklch(0 0.1 265);
-  --secondary: oklch(0.627 0.265 303.9);
+  --primary: oklch(54.1% 0.281 293.009);
+  --secondary: oklch(42.4% 0.199 265.638);
   --border: oklch(92.9% 0.013 255.508);
 }
 
@@ -34,8 +34,8 @@
 
   body {
     font-family: "YekanBakh", tahoma;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 15px;
   }
 }
 
@@ -58,22 +58,40 @@ body.loaded #page-loader {
   transition: opacity 0.3s ease;
 }
 
+.gradient {
+  background: linear-gradient(
+    to right,
+    oklch(54.1% 0.281 293.009) 0%,
+    oklch(62.3% 0.214 259.815) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    to right,
+    oklch(54.1% 0.281 293.009) 0%,
+    oklch(62.3% 0.214 259.815) 100%
+  );
+}
+
 /* Daisy Overrides */
 @layer utilities {
-  .container {
-    @apply mx-auto max-w-5xl px-3.5 md:px-0;
-  }
-
   .btn {
-    @apply bg-primary h-[38px] gap-2 rounded-lg border px-3 text-[13px] font-medium shadow-none ring-neutral-200 hover:ring-4 has-[i]:pr-2 [&_i]:text-lg;
+    @apply h-8 gap-2 rounded-lg border-0 px-3 text-xs font-normal text-white shadow-none ring-neutral-200 hover:ring-4 has-[i]:pr-2 [&_i]:text-lg;
   }
 
   .btn-sm {
     @apply h-8;
   }
 
+  .btn-icon {
+    @apply has-[i]:pl-2;
+  }
+
   .btn-primary {
-    @apply border-primary;
+    @apply bg-primary border-primary;
   }
 
   .btn-outline {
