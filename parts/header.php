@@ -33,7 +33,7 @@
         <label for="mobile-menu" class="drawer-button hidden items-center"><i class="ph ph-list text-[28px]"></i></label>
 
         <div class="_logo">
-          <a href=<?php echo is_rtl() ? '/' : '/en'; ?> class="flex items-center gap-1.5">
+          <a href=<?php echo is_rtl() ? '/blog' : '/en/blog'; ?> class="flex items-center gap-1.5">
             <div class="text-2xl font-extrabold gradient"><?php bloginfo('name'); ?></div>
             <div class="bg-gradient text-white text-xs px-1.5 h-6 rounded-md flex items-center leading-px font-medium">بـلاگ</div>
           </a>
@@ -50,7 +50,7 @@
         </nav>
 
         <div class="_buttons flex items-center justify-end gap-1.5 md:gap-2 flex-1">
-          <a href=<?php echo is_rtl() ? "https://befroosh.app" : "https://befroosh.app/en"; ?> class="btn btn-primary btn-icon">
+          <a href=<?php echo is_rtl() ? "/" : "/en"; ?> class="btn btn-primary btn-icon">
             <i class="ph-duotone ph-house md:hidden"></i>
             <span class="hidden md:inline-block"><?php echo pll__('Back To Site'); ?></span>
           </a>

@@ -4,7 +4,7 @@
 
 <footer>
   <div class="_copyright bg-slate-800/90 py-4">
-    <div class="container px-5 md:px-0">
+    <div class="container mx-auto px-5 md:px-0">
       <div class="_wrapper text-center">
         <?php if (function_exists('pll__')) : ?>
           <p class="text-center text-xs font-light text-gray-200">
