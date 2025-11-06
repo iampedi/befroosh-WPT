@@ -100,7 +100,6 @@
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --blur-xs: 4px;
     --default-transition-duration: 150ms;
@@ -2877,7 +2876,7 @@
 }
 @font-face {
   font-family: "YekanBakh";
-  src: url("https://befroosh.s3.ir-thr-at1.arvanstorage.ir/site%2Fassets%2Ffonts%2FYekanBakhFaNum-VF.woff2?versionId=") format("woff-variations"), url("https://befroosh.s3.ir-thr-at1.arvanstorage.ir/site%2Fassets%2Ffonts%2FYekanBakhFaNum-VF.woff?versionId=") format("woff");
+  src: url("../fonts/YekanBakh-VF.woff") format("woff-variations"), url("../fonts/YekanBakh-VF.woff") format("woff");
   font-weight: 100 1000;
   font-display: fallback;
 }
