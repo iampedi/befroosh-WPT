@@ -19,6 +19,7 @@
 </footer>
 <?php wp_footer(); ?>
 
+
 <script>
   window.addEventListener("load", function() {
     document.body.classList.add("loaded");
